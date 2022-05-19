@@ -1,7 +1,10 @@
 # Tukupedia-Responsive-Website
 
 Slicing page for Tukupedia-Responsive-Website is a website that is designed to be responsive and easy to use.
-USING HTML CSS, bootstrap.
+using HTML CSS, bootstrap.
+
+# More Information
+
 [HTML5](https://www.w3schools.com/html/html5_intro.asp)
 [CSS3](https://www.w3schools.com/css/css3_intro.asp).
 [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
@@ -27,5 +30,9 @@ USING HTML CSS, bootstrap.
 
 ## Deploy to Netlify
 
-[Deploy to Netlify](https://www.netlify.com/)
+[Deploy to Netlify](https://www.netlify.com/)<br>
 [Tukupedia Responsive Website](https://tukupedia-responsive-website.netlify.app/)
+
+## Lisence
+
+[Hasbi Alwi Kusmana](https://github.com/hasbialwikusmana)
