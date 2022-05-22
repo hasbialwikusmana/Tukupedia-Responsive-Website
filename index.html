@@ -5,13 +5,682 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=http://127.0.0.1:5500/pages/home.html">
-    <!-- url=https://tukupedia-responsive-website.netlify.app/pages/home.html -->
-    <title>Redirect</title>
+    <meta name="description" content="Jual beli online fashion terbaik . Belanja di Tukupedia">
+    <meta name="author" content="Hasbi Alwi Kusmana">
+    <meta name="keyword" content="Tukupedia, fashion, belanja, online, terbaik">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+    <title>Tukupedia - Home</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <!-- External Css -->
+    <link rel="stylesheet" href="/src/assets/css/style.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="/src/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/src/assets/css/owl.theme.default.min.css">
 </head>
 
 <body>
-    <h1>Redirecting...</h1>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow fixed-top">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand d-flex">
+                <img class="brand-logo" src="./assets/images/logo.svg" alt=" logo">
+                <p class="text-logo mb-0 pt-1 ps-1">Tukupedia</p>
+            </a>
+            <button class="navbar-toggler btn-sm btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-tuku" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-tuku">
+                <div class="row flex-grow-1 mt-md-2 mt-4">
+                    <div class="col-md-6 col-lg-6 col-12 mb-md-0 mb-3">
+                        <div class="row flex-grow-1">
+                            <div class="col-sm-10 col-9">
+                                <div class="input-group input-group-sm home-search rounded-pill">
+                                    <input type="text" class="form-control border-end-0 rounded-pill-start"
+                                        placeholder="Search">
+                                    <span class="input-group-text bg-white border-start-0 rounded-pill-end">
+                                        <img src="/src/assets/images/Search.svg" alt="logo-search">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-3 d-flex">
+                                <button class="btn-filter ms-md-0 ms-n3" data-bs-target="#filter-products"
+                                    data-bs-toggle="modal"><img src="/src/assets/images/filter.svg"
+                                        alt="icon-filter"></button>
+                                <a href="/src/pages/myBag.html" class="btn-icon d-md-none d-block"><img
+                                        src="/src/assets/images/shopping-cart.svg" alt="icon-chart"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="row flex-grow-1 gx-0">
+                            <div class="offset-4 col-2 d-none d-md-block">
+                                <a href="/src/pages/myBag.html" class="btn-icon ms-lg-4">
+                                    <img src="/src/assets/images/shopping-cart.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-8 d-flex">
+                                <a href="/src/auth/login.html"
+                                    class="btn btn-sm button-auth-active rounded-pill w-50 me-3">Login</a>
+                                <a href="/src/auth/register.html"
+                                    class="btn btn-sm button-auth rounded-pill w-50">Signup</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Carousel -->
+    <section class="container">
+        <div id="carouselExampleIndicators" class="carousel slide mt-5 " data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/images/sliders/img1.jpg" class="d-block rounded img-fluid" alt="sliders 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/sliders/img2.jpg" class="d-block rounded w-100" alt="sliders 2">
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- End Carousel -->
+    <!-- Start Category -->
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <p class="header-product">Category</p>
+                <p class="header-product-text mt-n4">What are you currently looking for</p>
+            </div>
+        </div>
+        <div class="owl-carousel owl-theme owl-loaded" id="carousel-category">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item">
+                        <div class="card bg-red card-category justify-content-center align-items-center">
+                            <img class="card-img w-60" src="/src/assets/images/category/hiclipart 15.png"
+                                alt="style-trend">
+                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                <a href="./pages/tShirt.html"
+                                    class="text-black-20px text-white fw-bold text-decoration-none stretched-link">T-Shirt</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="card bg-blue card-category justify-content-center align-items-center">
+                            <img class="card-img w-60" src="/src/assets/images/category/hiclipart 21.png"
+                                alt="style-trend">
+                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                <a href="./pages/tShirt.html"
+                                    class="text-black-20px text-white fw-bold text-decoration-none stretched-link">Shorts</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="card bg-orange card-category justify-content-center align-items-center">
+                            <img class="card-img w-60" src="/src/assets/images/category/hiclipart 22.png"
+                                alt="style-trend">
+                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                <a href="./pages/tShirt.html"
+                                    class="text-black-20px text-white fw-bold text-decoration-none stretched-link">Jacket</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="card bg-pink card-category justify-content-center align-items-center">
+                            <img class="card-img w-60" src="/src/assets/images/category/hiclipart 26.png"
+                                alt="style-trend">
+                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                <a href="./pages/tShirt.html"
+                                    class="text-black-20px text-white fw-bold text-decoration-none stretched-link">Pants</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="card bg-green card-category justify-content-center align-items-center">
+                            <img class="card-img w-60" src="/src/assets/images/category/hiclipart 34.png"
+                                alt="style-trend">
+                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                <a href="./pages/tShirt.html"
+                                    class="text-black-20px text-white fw-bold text-decoration-none stretched-link">Shoes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Category -->
+
+    <!-- product -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <p class="header-product">New</p>
+                <p class="header-product-text mt-n4">You’ve never seen it before!</p>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-sm-around justify-content-center">
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <p class="header-product">Popular</p>
+                <p class="header-product-text mt-n4">Find clothes that are trending recently</p>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-sm-around justify-content-center">
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="/src/assets/images/products/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="card-body">
+                        <a href="/src/pages/products.html" class="card-product-title stretched-link">Men's formal suit -
+                            Black & White</a>
+                        <p class="card-product-price mt-1">$ 40.0</p>
+                        <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                        <ul class="list-rating-product p-0 mt-n3">
+                            <li class=""><img class="img-fluid" src="/src/assets/images/Rating 5 stars.svg"
+                                    alt="icon-rating"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
