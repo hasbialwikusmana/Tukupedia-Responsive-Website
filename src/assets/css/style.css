@@ -65,7 +65,7 @@ body {
 }
 
 .form-check-input:checked {
-    background-color: #DB3022;
+    background-color: #32C33B;
 }
 
 .form-check-input:focus {
@@ -142,6 +142,16 @@ body {
     background-color: #2AA952;
     border: 1px solid #32C33B;
     color: white;
+}
+
+.btn-hover {
+    border: 1px solid #9B9B9B;
+}
+
+.btn-hover:hover {
+    background-color: #32C33B;
+    color: white;
+
 }
 
 .bg-red {
