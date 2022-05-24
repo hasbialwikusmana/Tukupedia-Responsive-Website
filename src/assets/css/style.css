@@ -154,6 +154,43 @@ body {
 
 }
 
+.btn-outline {
+    border: 1px solid #9B9B9B;
+    color: #9B9B9B;
+}
+
+.btn-outline:hover {
+    background-color: #32C33B;
+    color: white;
+}
+
+.btn-red {
+    background-color: #D84242;
+}
+
+.btn-red:hover {
+    color: #D84242;
+    background-color: #D84242;
+}
+
+.btn-black {
+    background-color: #1A1A1A;
+}
+
+.btn-black:hover {
+    color: #1A1A1A;
+    background-color: #1A1A1A;
+}
+
+.btn-blue {
+    background-color: #4290D8;
+}
+
+.btn-blue:hover {
+    color: #2185e2;
+    background-color: #4290D8;
+}
+
 .bg-red {
     background: #CC0B04;
 }
