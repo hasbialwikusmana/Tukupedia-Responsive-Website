@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jual beli online fashion terbaik . Belanja di Tukupedia">
+    <meta name="author" content="Hasbi Alwi Kusmana">
+    <meta name="keyword" content="Tukupedia, fashion, belanja, online, terbaik">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+    <title>Tukupedia - Selling Products</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <!-- External Css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/profile.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow fixed-top">
+        <div class="container">
+            <a href="../auth/index.html" class="navbar-brand d-flex">
+                <img class="brand-logo" src="../assets/images/logo.svg" alt="logo-app">
+                <p class="text-logo mb-n5 pt-2 ps-1">Tukupedia</p>
+            </a>
+            <button class="navbar-toggler btn-sm btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-tuku" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-tuku">
+                <div class="row flex-grow-1 mt-md-2 mt-4">
+                    <div class="col-md-6 col-lg-6 col-12 mb-md-0 mb-3">
+                        <div class="row flex-grow-1">
+                            <div class="col-sm-10 col-9">
+                                <div class="input-group input-group-sm home-search rounded-pill">
+                                    <input type="text" class="form-control border-end-0 rounded-pill-start"
+                                        placeholder="Search">
+                                    <span class="input-group-text bg-white border-start-0 rounded-pill-end">
+                                        <img src="../assets/images/Search.svg" alt="logo-search">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-3 d-flex">
+                                <button class="btn-filter ms-md-0 ms-n3" data-bs-target="#filter-prouct"
+                                    data-bs-toggle="modal"><img src="../assets/images/filter.svg"
+                                        alt="icon-filter"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="row flex-grow-1 flex-wrap">
+                            <div
+                                class="offset-md-2 col-10 d-flex justify-content-md-end justify-content-start align-items-center">
+                                <a href="./myBag.html" class="btn-icon mx-3">
+                                    <img src="../assets/images/shopping-cart.svg" alt="icon-chart">
+                                </a>
+                                <a href="./myBag.html" class="btn-icon mx-3"><img src="../assets/images/bell.svg"
+                                        alt="icon-bell"></a>
+                                <a href="./myBag.html" class="btn-icon mx-3"><img src="../assets/images/mail.svg"
+                                        alt="icon-mail"></a>
+                                <a href="./profile.html" class="mx-3"><img class="rounded-circle"
+                                        src="../assets/images/profile.png" alt="icon-profile"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- main content -->
+    <!-- <section class="container"> -->
+    <div class="d-flex wrapper flex-nowrap mt-4">
+        <aside class="sidebar ps-5 flex-column">
+            <div class="user-profile d-flex flex-wrap mb-5">
+                <img src="../assets/images/christian.png" class="user-profile-img" alt="user-profile-img">
+                <div class="d-flex flex-column ps-3 pt-1">
+                    <div class="text-black-16px font-semi-bold">Johanes Mikael</div>
+                    <div class="text-black-14px text-black-50"><img src="../assets/images/edit.svg" alt=""> Ubah
+                        profile</div>
+                </div>
+            </div>
+            <div>
+                <ul class="sidebar-menu">
+                    <li>
+                        <input type="checkbox" class="sidebar-collapse" id="sidebar-collapse1">
+                        <label for="sidebar-collapse1" class="d-flex align-items-center text-black-50">
+                            <div class="sidebar-menu-icon-background bg-light-blue">
+                                <img class="sidebar-menu-icon" src="../assets/images/home.svg" alt="">
+                            </div>Store
+                            <span class="arrow-menu ms-auto">
+                        </label>
+                        <ul class="sidebar-submenu" id="submenu1">
+                            <li>
+                                <a href="#" class="text-black-50">Store profile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="sidebar-collapse" id="sidebar-collapse2">
+                        <label for="sidebar-collapse2" class="d-flex align-items-center">
+                            <div class="sidebar-menu-icon-background bg-dark-orange">
+                                <img class="sidebar-menu-icon" src="../assets/images/package.svg" alt="">
+                            </div>Product
+                            <span class=" arrow-menu ms-auto"></span>
+                        </label>
+                        <ul class="sidebar-submenu" id="submenu2">
+                            <li>
+                                <a href="#" class="text-black-50">My Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Selling products</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="sidebar-collapse" id="sidebar-collapse3">
+                        <label for="sidebar-collapse3" class="d-flex align-items-center text-black-50">
+                            <div class="sidebar-menu-icon-background bg-pink">
+                                <img class="sidebar-menu-icon" src="../assets/images/shopping-cart 1.svg" alt="">
+                            </div> Order
+                            <span class=" arrow-menu ms-auto"></span>
+                        </label>
+                        <ul class="sidebar-submenu" id="submenu2">
+                            <li>
+                                <a href="#" class="text-black-50">My order</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-black-50">Order cancel</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main-panel">
+            <section class="container">
+                <div class="card rounded-3 shadow mb-4">
+                    <div class="card-header bg-transparent p-3">
+                        <div class="text-black-20px fw-bold">Inventory</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-8 col-sm-12 col-12">
+                                <label for="goods" class="form-label text-black-50">Name of goods</label>
+                                <input type="text" class="form-control" name="goods" id="goods">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-3 shadow mb-4">
+                    <div class="card-header bg-transparent p-3">
+                        <div class="text-black-20px fw-bold">Item details</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-8 col-sm-12 col-12 mb-3">
+                                <label for="unit_price" class="form-label text-black-50">Unit price</label>
+                                <input type="number" class="form-control input-number-noarrow" name="unit_price"
+                                    id="unit_price">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-8 col-sm-12 col-12 mb-3">
+                                <label for="stock" class="form-label text-black-50">Stock</label>
+                                <div class="input-group">
+                                    <input type="number" class="form-control border-end-0 input-number-noarrow"
+                                        name="stock" id="stock">
+                                    <label for="stock"
+                                        class="input-group-text border-grey border-start-0 bg-transparent text-black-50 text-black-14px">Buah</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-8 col-sm-12 col-12">
+                                <p class="text-black-50 lh-1">Stock</p>
+                                <div class="form-check-inline">
+                                    <input type="radio" class="form-check-input" value="baru" name="stock"
+                                        id="stock_baru">
+                                    <label for="stock_baru" class="form-check-label text-black-50 me-4">Baru</label>
+                                    <input type="radio" class="form-check-input" value="baru" name="stock"
+                                        id="stock_bekas">
+                                    <label for="stock_bekas" class="form-check-label text-black-50">Bekas</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-3 shadow mb-4">
+                    <div class="card-header bg-transparent p-3">
+                        <div class="text-black-20px fw-bold">Photo of goods</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="border border-dashed rounded-3 p-5 pb-0 ">
+                            <div class="row flex-nowrap overflow-x pb-5 align-items-center">
+                                <div class="col">
+                                    <div class="card img-preview-primary">
+                                        <div class="card-body d-flex justify-content-center align-items-center">
+                                            <img class="img-fluid" src="../assets/images/box 5.svg" alt="">
+                                            <div class="img-preview-primary-waypoint">Foto utama</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card img-preview-secondary">
+                                        <div class="card-body d-flex justify-content-center align-items-center">
+                                            <img class="img-fluid" src="../assets/images/box 1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card img-preview-secondary">
+                                        <div class="card-body d-flex justify-content-center align-items-center">
+                                            <img class="img-fluid" src="../assets/images/box 1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card img-preview-secondary">
+                                        <div class="card-body d-flex justify-content-center align-items-center">
+                                            <img class="img-fluid" src="../assets/images/box 1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card img-preview-secondary">
+                                        <div class="card-body d-flex justify-content-center align-items-center">
+                                            <img class="img-fluid" src="../assets/images/box 1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <hr>
+                                    <button class="btn button-auth rounded-pill btn-sm">Uploud foto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-3 shadow mb-4">
+                    <div class="card-header bg-transparent p-3">
+                        <div class="text-black-20px fw-bold">Description</div>
+                    </div>
+                    <div class="card-body">
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class=" text-end mb-4">
+                    <button class="btn btn-sm btn-orange rounded-pill px-5" aria-label="button sell">Jual</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- </section> -->
+    <!-- main content -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
