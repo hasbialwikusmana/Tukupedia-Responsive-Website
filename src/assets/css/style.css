@@ -81,9 +81,9 @@ body {
 }
 
 .btn-filter {
-    background: #FFFFFF;
-    border: 1px solid #8E8E93;
-    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #9B9B9B;
+    border-radius: 12px;
 }
 
 .btn-icon {
