@@ -30,7 +30,6 @@ using HTML CSS, bootstrap.
 
 ## Deploy to Netlify
 
-[Deploy to Netlify](https://www.netlify.com/)<br>
 [Tukupedia Responsive Website](https://tukupedia-responsive-website.netlify.app/)
 
 ### License
